@@ -1,0 +1,16 @@
+program KeyGen;
+
+uses
+  Forms,
+  fKeyGen in 'fKeyGen.pas' {frmKeyGenerate},
+  uKeyCtrl in 'uKeyCtrl.pas',
+  uKeyCheck in 'uKeyCheck.pas';
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.Title := 'Key Generate for Product of Waffle Comm.';
+  Application.CreateForm(TfrmKeyGenerate, frmKeyGenerate);
+  Application.Run;
+end.

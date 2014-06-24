@@ -1,0 +1,13 @@
+program KeyGen;
+
+uses
+  Forms,
+  fKeyGen in 'fKeyGen.pas' {frmKeyGenerate};
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmKeyGenerate, frmKeyGenerate);
+  Application.Run;
+end.
